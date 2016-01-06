@@ -1,0 +1,125 @@
+{% load staticfiles %}
+
+</head> 
+
+<body class="home-page">
+    <div class="wrapper">
+        <!-- ******HEADER****** --> 
+        <header class="header">  
+            <div class="top-bar">
+                <div class="container">              
+                    <ul class="social-icons col-md-6 col-sm-6 col-xs-12 hidden-xs">
+                        <li><a href="#" ><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" ><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" ><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#" ><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#" ><i class="fa fa-google-plus"></i></a></li>         
+                        <li class="row-end"><a href="#" ><i class="fa fa-rss"></i></a></li>             
+                    </ul><!--//social-icons-->
+                    <form class="pull-right search-form" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Cari artikel di website...">
+                        </div>
+                        <button type="submit" class="btn btn-theme">Cari</button>
+                    </form>         
+                </div>      
+            </div><!--//to-bar-->
+            <div class="header-main container">
+                <h1 class="logo col-md-4 col-sm-4">
+                    <a href="{% url 'home' %}"><img src="{% static 'images/logo/logo2.png' %}" alt="Logo" height="75"></a>
+                </h1><!--//logo-->           
+                <div class="info col-md-8 col-sm-8">
+                    <ul class="menu-top navbar-right hidden-xs">
+                        <li class="divider"><a href="#">Kuliah di UMS</a></li>
+                        <li class="divider"><a href="#">Media</a></li>
+                        <li class="divider"><a href="#">Sitemap</a></li>
+                        <li role="presentation" class="dropdown">
+						    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+						      Akses Cepat <span class="caret"></span>
+						    </a>
+						    <ul class="dropdown-menu">
+						       <li><a href="#">My UMS Website</a></li>
+                                <li><a href="#">Email UMS Site</a></li>
+                                <li><a href="#">Akademik Sistem Terpadu</a></li>
+                                <li><a href="#">Biro Administrasi Keuangan</a></li>
+                                <li><a href="#">Biro Administrasi Akademik</a></li>
+                                <li><a href="#">Ka Bagian Mahasiswa</a></li>
+                                <li><a href="#">Badan Eksekutif Mahasiswa</a></li>
+                                <li><a href="#">Perpustakaan</a></li>
+                                <li><a href="#">Skrips - Tugas Akhir</a></li>
+						    </ul>
+						</li>
+                    </ul><!--//menu-top-->
+                    <br />
+                    <div class="contact pull-right">
+                        <p class="phone"><i class="fa fa-phone"></i>Call us today 0800 123 4567</p> 
+                        <p class="email"><i class="fa fa-envelope"></i><a href="#">it@ums.ac.id</a></p>
+                    </div><!--//contact-->
+                </div><!--//info-->
+            </div><!--//header-main-->
+        </header><!--//header-->
+        
+        <!-- ******NAV****** -->
+        <nav class="main-nav" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button><!--//nav-toggle-->
+                </div><!--//navbar-header-->            
+                <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active nav-item"><a href="{% url 'home' %}">Beranda</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Tentang UMS <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Sejarah</a></li>  
+                                <li><a href="#">Kerjasama</a></li>
+                                <li><a href="#">Prestasi</a></li>
+                                <li><a href="#">Lingkungan Kampus</a></li>  
+                                <!-- <li class="dropdown-submenu">
+                                    <a class="trigger" tabindex="-1" href="#">Menu Levels <i class="fa fa-angle-right"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="#">Submenu Level 2</a></li>
+                                        <li class="dropdown-submenu">
+                                            <a class="trigger" href="#">Submenu Level 2 <i class="fa fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Submenu Level 3</a></li>
+                                            	<li><a href="#">Submenu Level 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Submenu Level 2</a></li>
+                                        <li><a href="#">Submenu Level 2</a></li>
+                                    </ul>
+                                </li> -->           
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Akademik <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Study</a></li>
+                                <li><a href="#">Fakultas dan Jurusan</a></li>   
+                                <li><a href="#">Berita</a></li>
+                                <li><a href="#">Agenda</a></li>     
+                                <li><a href="#">Gallery</a></li>     
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Layanan <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Fasilitas Kampus</a></li>          
+                                <li><a href="#">Perpustakaan</a></li>          
+                                <li><a href="#">Penelitian</a></li>          
+                                <li><a href="#">Konsultasi</a></li>          
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#">Karir</a></li>
+                        <li class="nav-item"><a href="#">Kontak</a></li>
+                    </ul><!--//nav-->
+                </div><!--//navabr-collapse-->
+            </div><!--//container-->
+        </nav><!--//main-nav-->
